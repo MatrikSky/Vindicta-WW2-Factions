@@ -47,13 +47,6 @@ _cargo = +(tDefault select T_CARGO);
 //==== Groups ====
 _group = +(tDefault select T_GROUP);
 
-/* Unit descriptions */
-(T_NAMES select T_INF) set [T_INF_SL, "SS"]; //							= 1 Squad leader
-(T_NAMES select T_INF) set [T_INF_TL, "SS"]; //							= 2 Team leader
-(T_NAMES select T_INF) set [T_INF_officer,"SS"]; //						= 3 Officer
-(T_NAMES select T_VEH) set [T_VEH_car_unarmed, "Passenger Car"]; //		= 1 Car like a Prowler or UAZ
-
-
 //==== Arrays ====
 _array set [T_INF, _inf];
 _array set [T_VEH, _veh];

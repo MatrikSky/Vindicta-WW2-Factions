@@ -70,11 +70,11 @@ _veh set [T_VEH_DEFAULT, ["LIB_Kfz1_sernyt"]];
 _veh set [T_VEH_car_unarmed, ["LIB_Kfz1_sernyt", "LIB_Kfz1", "LIB_Kfz1_camo", "LIB_Kfz1_Hood_sernyt", "LIB_Kfz1_Hood", "LIB_Kfz1_Hood_camo"]];
 _veh set [T_VEH_car_armed, ["LIB_ger_M3_Scout_IFL", "LIB_Kfz1_MG42_sernyt", "LIB_Kfz1_MG42", "LIB_Kfz1_MG42_camo"]];
 
-_veh set [T_VEH_MRAP_unarmed, ["LIB_Kfz1_sernyt", "LIB_Kfz1", "LIB_Kfz1_camo"]];
+//_veh set [T_VEH_MRAP_unarmed, ["LIB_Kfz1_sernyt", "LIB_Kfz1", "LIB_Kfz1_camo"]];
 _veh set [T_VEH_MRAP_HMG, ["LIB_ger_M3_Scout_IFL"]];
 _veh set [T_VEH_MRAP_GMG, ["LIB_GER_M8_Greyhound"]];
 
-//_veh set [T_VEH_IFV, [/*, "LIB_SdKfz222", "LIB_SdKfz222_camo", "LIB_SdKfz222_gelbbraun", "LIB_SdKfz234_1", "LIB_SdKfz234_2", "LIB_SdKfz234_3", "LIB_SdKfz234_4"*/]];
+//_veh set [T_VEH_IFV, [/*"LIB_SdKfz222", "LIB_SdKfz222_camo", "LIB_SdKfz222_gelbbraun", "LIB_SdKfz234_1", "LIB_SdKfz234_2", "LIB_SdKfz234_3", "LIB_SdKfz234_4"*/]];
 _veh set [T_VEH_APC, ["LIB_GER_M3_Halftrack", "LIB_SdKfz_7", "LIB_SdKfz251", "LIB_SdKfz251_FFV"]];
 _veh set [T_VEH_MBT, [ "LIB_ger_M4A3_Sherman", "LIB_PzKpfwV", "LIB_PzKpfwVI_B", "LIB_PzKpfwVI_B_tarn51c", "LIB_PzKpfwVI_B_tarn51d", "LIB_PzKpfwVI_E", "LIB_PzKpfwVI_E_2", "LIB_PzKpfwVI_E_tarn51c", "LIB_PzKpfwVI_E_tarn51d", "LIB_PzKpfwVI_E_tarn52c", "LIB_PzKpfwVI_E_tarn52d", "LIB_PzKpfwVI_E_1", "LIB_StuG_III_G", "LIB_PzKpfwIV_H", "LIB_PzKpfwIV_H_tarn51c", "LIB_PzKpfwIV_H_tarn51d", "LIB_StuG_III_G", "LIB_PzKpfwIV_H", "LIB_PzKpfwIV_H_tarn51c", "LIB_PzKpfwIV_H_tarn51d", "LIB_StuG_III_G", "LIB_PzKpfwIV_H", "LIB_PzKpfwIV_H_tarn51c", "LIB_PzKpfwIV_H_tarn51d"]];
 _veh set [T_VEH_MRLS, ["LIB_Nebelwerfer41", "LIB_Nebelwerfer41_Camo", "LIB_Nebelwerfer41_Gelbbraun"]];
@@ -138,36 +138,6 @@ _group set [T_GROUP_inf_AA_team, [
 		T_INF_rifleman
 	] apply { [T_INF, _x] }
 ]];
-
-//==== Description ==== 
-(T_NAMES select T_VEH) set [T_VEH_car_unarmed, "Passenger Car"]; //						= 1 Car like a Prowler or UAZ
-(T_NAMES select T_VEH) set [T_VEH_car_armed, "Armed Car"]; //							= 2 Car with any kind of mounted weapon
-(T_NAMES select T_VEH) set [T_VEH_MRAP_unarmed, "Unarmed Scout Car"]; //				= 3 MRAP
-(T_NAMES select T_VEH) set [T_VEH_MRAP_HMG, "Armed Scout Car"]; //						= 4 MRAP with a mounted HMG gun
-(T_NAMES select T_VEH) set [T_VEH_MRAP_GMG, "Armored Car"]; //							= 5 MRAP with a mounted GMG gun
-//(T_NAMES select T_VEH) set [T_VEH_IFV, "Captured Half-Track"]; //						= 6 Infantry fighting vehicle
-(T_NAMES select T_VEH) set [T_VEH_APC, "Half-Track"]; //								= 7 Armored personnel carrier
-(T_NAMES select T_VEH) set [T_VEH_MBT, "Medium-Heavy Tank"]; //							= 8 Main Battle Tank
-(T_NAMES select T_VEH) set [T_VEH_SPA, "Light Field Howitzer"]; //						= 10 Self-Propelled Artillery
-(T_NAMES select T_VEH) set [T_VEH_MRLS, "Self-Propelled Rocket Artillery"]; //			= 9 Multiple Rocket Launch System
-(T_NAMES select T_VEH) set [T_VEH_heli_attack, "Plane"]; //								= 23 Attack helicopter
-(T_NAMES select T_INF) set [T_INF_LMG, "MG 34 Machine Gunner"]; //						= 14 Light machinegunner
-(T_NAMES select T_INF) set [T_INF_HMG, "MG 42 Machine Gunner"]; //						= 15 Heavy machinegunner
-(T_NAMES select T_INF) set [T_INF_AA, "Radioman"]; //									= 13 Anti-Air
-(T_NAMES select T_INF) set [T_INF_pilot_heli, "Pilot"]; //								= 21 Helicopter pilot
-(T_NAMES select T_INF) set [T_INF_crew_heli, "Pilot"]; //								= 19 Helicopter crew
-(T_NAMES select T_INF) set [T_INF_recon_TL, "Paratrooper Team Leader"]; //				= 24 Recon team leader
-(T_NAMES select T_INF) set [T_INF_recon_rifleman, "Paratrooper"]; //					= 25 Recon scout
-(T_NAMES select T_INF) set [T_INF_recon_medic, "Paratrooper Medic"]; //					= 26 Recon medic
-(T_NAMES select T_INF) set [T_INF_recon_exp, "Paratrooper Explosive Specialist"]; //	= 27 Recon demo specialist
-(T_NAMES select T_INF) set [T_INF_recon_LAT, "Paratrooper AT"]; //						= 28 Recon light AT
-(T_NAMES select T_INF) set [T_INF_recon_JTAC, "Paratrooper Radioman"]; //				= 30 Recon JTAC
-(T_NAMES select T_VEH) set [T_VEH_stat_AA, "Air-Defence Gun"]; //						= 16 Static AA, can be a gun or guided-missile launcher
-(T_NAMES select T_VEH) set [T_VEH_stat_AT, "Anti-Tank Gun"]; //							= 17 Static AT, e.g. a gun or ATGM
-(T_NAMES select T_VEH) set [T_VEH_stat_mortar_light, "Mortar"]; // 						= 18 Light mortar
-(T_NAMES select T_VEH) set [T_VEH_SPAA, "Self-Propelled Anti-Aircraft Gun"]; //			= 11 Self-Propelled Anti-Aircraft system
-(T_NAMES select T_VEH) set [T_VEH_stat_HMG_high, "Mg 34 Emplacement"]; //				= 12 Static tripod Heavy Machine Gun (elevated)
-(T_NAMES select T_VEH) set [T_VEH_stat_GMG_high, "Mg 42 Emplacement"]; // 				= 13 Static tripod Grenade Machine Gun (elevated)
 
 //==== Arrays ====
 _array set [T_INF, _inf];

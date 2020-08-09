@@ -68,10 +68,10 @@ _veh = []; _veh resize T_VEH_SIZE;
 _veh set [T_VEH_SIZE-1, nil];
 _veh set [T_VEH_DEFAULT, ["LIB_GazM1_SOV"]];
 
-_veh set [T_VEH_car_unarmed, ["LIB_GazM1_SOV", "LIB_GazM1_SOV_camo_sand"]];
-_veh set [T_VEH_car_armed, ["LIB_GazM1_SOV", "LIB_GazM1_SOV_camo_sand", "LIB_Willys_MB", "LIB_Willys_MB_Hood"]];
+_veh set [T_VEH_car_unarmed, ["LIB_GazM1_SOV", "LIB_GazM1_SOV_camo_sand", "LIB_Willys_MB", "LIB_Willys_MB_Hood"]];
+//_veh set [T_VEH_car_armed, ["LIB_GazM1_SOV", "LIB_GazM1_SOV_camo_sand", "LIB_Willys_MB", "LIB_Willys_MB_Hood"]];
 
-_veh set [T_VEH_MRAP_unarmed, ["LIB_Willys_MB", "LIB_Willys_MB_Hood"]];
+//_veh set [T_VEH_MRAP_unarmed, ["LIB_Willys_MB", "LIB_Willys_MB_Hood"]];
 _veh set [T_VEH_MRAP_HMG, ["LIB_sov_M3_Scout_IFL"]];
 //_veh set [T_VEH_MRAP_GMG, []];
 
@@ -141,28 +141,19 @@ _group set [T_GROUP_inf_AA_team, [
 ]];
 
 //==== Description ====
-(T_NAMES select T_VEH) set [T_VEH_car_unarmed, "Passenger Car"]; //				= 1 Car like a Prowler or UAZ
-(T_NAMES select T_VEH) set [T_VEH_car_armed, "Light Utility Vehicle"]; //			= 2 Car with any kind of mounted weapon
-(T_NAMES select T_VEH) set [T_VEH_MRAP_unarmed, "Unarmed Scout Car"]; //	= 3 MRAP
+(T_NAMES select T_VEH) set [T_VEH_car_unarmed, "Unarmed Car"]; //				= 1 Car like a Prowler or UAZ
+(T_NAMES select T_VEH) set [T_VEH_car_armed, "Armed Car"]; //					= 2 Car with any kind of mounted weapon
+(T_NAMES select T_VEH) set [T_VEH_MRAP_unarmed, "Unarmed Scout Car"]; //		= 3 MRAP
 (T_NAMES select T_VEH) set [T_VEH_MRAP_HMG, "Armed Scout Car"]; //				= 4 MRAP with a mounted HMG gun
-//(T_NAMES select T_VEH) set [T_VEH_MRAP_GMG, "Armed Patrol Car"]; //			= 5 MRAP with a mounted GMG gun
-//(T_NAMES select T_VEH) set [T_VEH_IFV, "Half-Track"]; //						= 6 Infantry fighting vehicle
-(T_NAMES select T_VEH) set [T_VEH_APC, "Half-Track"]; //				= 7 Armored personnel carrier
-(T_NAMES select T_VEH) set [T_VEH_MBT, "Medium-Heavy Tank"]; //					= 8 Main Battle Tank
-(T_NAMES select T_VEH) set [T_VEH_SPA, "Self-Propelled Rocket Artillery"]; //	= 10 Self-Propelled Artillery
+(T_NAMES select T_VEH) set [T_VEH_MRAP_GMG, "Armored Car"]; //					= 5 MRAP with a mounted GMG gun
+(T_NAMES select T_VEH) set [T_VEH_APC, "APC"]; //								= 7 Armored personnel carrier
+(T_NAMES select T_VEH) set [T_VEH_MBT, "Tank"]; //								= 8 Main Battle Tank
 (T_NAMES select T_VEH) set [T_VEH_MRLS, "Self-Propelled Rocket Artillery"]; //	= 9 Multiple Rocket Launch System
 (T_NAMES select T_VEH) set [T_VEH_heli_attack, "Plane"]; //						= 23 Attack helicopter
-(T_NAMES select T_INF) set [T_INF_LMG, "DP Machine Gunner"]; //					= 14 Light machinegunner
-(T_NAMES select T_INF) set [T_INF_HMG, "DT Machine Gunner"]; //					= 15 Heavy machinegunner
+(T_NAMES select T_VEH) set [T_VEH_SPA, "Self-Propelled Artillery"]; //			= 10 Self-Propelled Artillery
 (T_NAMES select T_INF) set [T_INF_AA, "Radioman"]; //							= 13 Anti-Air
 (T_NAMES select T_INF) set [T_INF_pilot_heli, "Pilot"]; //						= 21 Helicopter pilot
 (T_NAMES select T_INF) set [T_INF_crew_heli, "Pilot"]; //						= 19 Helicopter crew
-(T_NAMES select T_INF) set [T_INF_recon_TL, "Scout Team Leader"]; //			= 24 Recon team leader
-(T_NAMES select T_INF) set [T_INF_recon_rifleman, "Scout"]; //					= 25 Recon scout
-(T_NAMES select T_INF) set [T_INF_recon_medic, "Scout Medic"]; //				= 26 Recon medic
-(T_NAMES select T_INF) set [T_INF_recon_exp, "Scout Explosive Specialist"]; //	= 27 Recon demo specialist
-(T_NAMES select T_INF) set [T_INF_recon_LAT, "Scout AT"]; //					= 28 Recon light AT
-(T_NAMES select T_INF) set [T_INF_recon_JTAC, "Scout Radioman"]; //				= 30 Recon JTAC
 (T_NAMES select T_VEH) set [T_VEH_stat_AA, "Air-Defence Gun"]; //				= 16 Static AA, can be a gun or guided-missile launcher
 (T_NAMES select T_VEH) set [T_VEH_stat_AT, "Anti-Tank Gun"]; //					= 17 Static AT, e.g. a gun or ATGM
 (T_NAMES select T_VEH) set [T_VEH_stat_mortar_light, "Mortar"]; // 				= 18 Light mortar
