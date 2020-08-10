@@ -11,6 +11,8 @@ removeGoggles this;
 
 /*Helmet*/
 this addHeadgear "H_FOW_GER_Helmet_M38StahlhelmFSJ_FeldgrauA";
+/*Gogles*/
+this addGoggles "G_LIB_GER_Cap_Earphone";
 /*Uniform*/
 this forceAddUniform "fow_u_ger_fall_01_private";
 /*Vest*/

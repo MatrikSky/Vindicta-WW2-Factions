@@ -19,8 +19,7 @@ this addVest "V_LIB_SOV_RA_MosinBelt";
 this addBackpack "B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel_Green";
 
 /*Weapon*/
-_RandomWeapon = selectRandom ["LIB_M9130", "LIB_M9130", "LIB_M38", "LIB_M44"];
-this addWeapon _RandomWeapon;
+this addWeapon "LIB_M9130";
 /*WeaponItem*/
 this addPrimaryWeaponItem "lib_5rnd_762x54";
 

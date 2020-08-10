@@ -14,7 +14,7 @@ this addHeadgear "H_LIB_GER_Helmet_ns";
 /*Uniform*/
 this forceAddUniform "fow_u_ger_m43_01_lance_corporal";
 /*Vest*/
-this addVest "fow_v_heer_g43";
+this addVest "fow_v_heer_mp40_nco";
 /*Backpack*/
 this addBackpack "B_LIB_GER_A_frame";
 
@@ -26,7 +26,6 @@ this addPrimaryWeaponItem "LIB_32Rnd_9x19";
 this addHandgunItem "LIB_8Rnd_9x19_P08";
 
 /*Items*/
-this addItemToUniform "FirstAidKit";
 for "_i" from 1 to 3 do {this addItemToVest "LIB_32Rnd_9x19";};
 for "_i" from 1 to 2 do {this addItemToVest "LIB_8Rnd_9x19_P08";};
 for "_i" from 1 to 2 do {this addItemToVest "LIB_Shg24";};

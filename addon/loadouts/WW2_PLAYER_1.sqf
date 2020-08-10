@@ -137,7 +137,7 @@ private _gunsAndAmmo = [
 	["LIB_Webley_mk6",			"lib_6rnd_455",				true],	0.6,
 	["fow_w_welrod_mkii",		"fow_8rnd_765x17",			true],	0.3,
 	// long
-	["LIB_M1903A3_Springfield",	"fow_5rnd_762x63",			false],	0.1,
+	["LIB_M1903A3_Springfield",	"lib_5Rnd_762x63",			false],	0.1,
 	["LIB_K98",					"lib_5rnd_792x57",			false],	0.1,
 	["LIB_LeeEnfield_No4",		"lib_10rnd_770x56",			false],	0.1,
 	["LIB_M9130",				"lib_5rnd_762x54",			false],	0.1,

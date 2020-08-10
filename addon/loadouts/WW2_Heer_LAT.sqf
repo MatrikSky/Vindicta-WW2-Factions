@@ -19,8 +19,7 @@ this addVest "fow_v_heer_k98";
 this addBackpack "B_LIB_GER_A_frame";
 
 /*Weapon*/
-_RandomWeapon = selectRandom ["LIB_K98", "LIB_K98_Late", "LIB_G3340"];
-this addWeapon _RandomWeapon;
+this addWeapon "LIB_K98";
 //["LIB_PzFaust_30m", "fow_w_pzfaust_100", "LIB_PzFaust_60m", "LIB_Faustpatrone"];
 this addWeapon "LIB_PzFaust_30m";
 /*WeaponItem*/

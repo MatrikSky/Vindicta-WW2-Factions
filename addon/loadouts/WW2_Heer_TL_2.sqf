@@ -12,7 +12,7 @@ removeGoggles this;
 /*Helmet*/
 this addHeadgear "H_LIB_GER_Helmet_os";
 /*Gogles*/
-this addGoggles "G_LIB_Binoculars";
+this addGoggles "G_LIB_GER_Cap_Earphone";
 /*Uniform*/
 this forceAddUniform "fow_u_ger_m43_01_corporal";
 /*Vest*/

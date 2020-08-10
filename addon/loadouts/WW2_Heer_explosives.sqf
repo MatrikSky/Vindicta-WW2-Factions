@@ -19,8 +19,7 @@ this addVest "fow_v_heer_mp40";
 this addBackpack "B_LIB_GER_SapperBackpack_empty";
 
 /*Weapon*/
-_RandomWeapon = selectRandom ["LIB_MP38", "LIB_MP40"];
-this addWeapon _RandomWeapon;
+this addWeapon "LIB_MP38";
 /*WeaponItem*/
 this addPrimaryWeaponItem "LIB_32Rnd_9x19";
 

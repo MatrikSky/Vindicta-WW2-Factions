@@ -20,8 +20,7 @@ this addVest "fow_v_heer_k98";
 this addBackpack "B_LIB_GER_Tonister34_cowhide";
 
 /*Weapon*/
-_RandomWeapon = selectRandom ["LIB_K98", "LIB_K98_Late", "LIB_G3340"];
-this addWeapon _RandomWeapon;
+this addWeapon "LIB_K98";
 /*WeaponItem*/
 this addPrimaryWeaponItem "LIB_5Rnd_792x57";
 

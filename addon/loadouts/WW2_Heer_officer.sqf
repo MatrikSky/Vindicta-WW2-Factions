@@ -12,19 +12,18 @@ removeGoggles this;
 /*Helmet*/
 this addHeadgear "H_LIB_GER_OfficerCap";
 /*Gogles*/
-_RandomGoggles = selectRandom ["G_LIB_Binoculars", "G_LIB_Binoculars", "G_LIB_GER_Cap_Earphone", "G_LIB_GER_Cap_Earphone2"];
+_RandomGoggles = selectRandom ["G_LIB_GER_Cap_Earphone", "G_LIB_GER_Cap_Earphone2"];
 this addGoggles _RandomGoggles;
 /*Uniform*/
 _RandomUniform = selectRandom ["U_LIB_GER_Hauptmann", "U_LIB_GER_Leutnant", "U_LIB_GER_Oberleutnant", "U_LIB_GER_Oberst"];
 this forceAddUniform _RandomUniform;
 /*Vest*/
-this addVest "V_LIB_GER_OfficerBelt";
+this addVest "V_LIB_GER_OfficerVest";
 /*Backpack*/
 this addBackpack "B_LIB_GER_Radio_ACRE2";
 
 /*Weapon*/
-_RandomWeapon = selectRandom ["LIB_MP38", "LIB_MP40"];
-this addWeapon _RandomWeapon;
+this addWeapon "LIB_MP38";
 this addWeapon "LIB_M1896";
 /*WeaponItem*/
 this addPrimaryWeaponItem "LIB_32Rnd_9x19";

@@ -27,21 +27,21 @@ _inf set [T_INF_default, ["LIB_GER_ober_rifleman"]];	//Default infantry if nothi
 _inf set [T_INF_SL, ["WW2_Heer_SL", "WW2_Heer_SL_2", "WW2_Heer_SL_3"]];
 _inf set [T_INF_TL, ["WW2_Heer_TL", "WW2_Heer_TL_2"]];
 _inf set [T_INF_officer, ["WW2_Heer_officer"]];
-_inf set [T_INF_GL, ["WW2_Heer_GL", "WW2_Heer_GL", "WW2_Heer_GL_2"]];
-_inf set [T_INF_rifleman, ["WW2_Heer_rifleman", "WW2_Heer_rifleman_2", "WW2_Heer_rifleman", "WW2_Heer_rifleman_2", "WW2_Heer_rifleman_3", "WW2_Heer_rifleman_4", "WW2_Heer_rifleman_5", "WW2_Heer_rifleman_6"]];
+_inf set [T_INF_GL, ["WW2_Heer_GL", 1, "WW2_Heer_GL_2", 0.50, "WW2_Heer_GL_3", 1]];
+_inf set [T_INF_rifleman, ["WW2_Heer_rifleman", 2, "WW2_Heer_rifleman_2", 2, "WW2_Heer_rifleman_5", 2, "WW2_Heer_rifleman_3", 1, "WW2_Heer_rifleman_4", 1, "WW2_Heer_rifleman_6", 1]];
 _inf set [T_INF_sniper, ["WW2_Heer_sniper"]];
 _inf set [T_INF_marksman, ["WW2_Heer_marksman"]];
-_inf set [T_INF_exp, ["WW2_Heer_explosives"]];
+_inf set [T_INF_exp, ["WW2_Heer_explosives", "WW2_Heer_explosives_2"]];
 _inf set [T_INF_LAT, ["WW2_Heer_LAT", "WW2_Heer_LAT_2", "WW2_Heer_LAT_3", "WW2_Heer_LAT_2", "WW2_Heer_LAT_3", "WW2_Heer_LAT_4"]];
-_inf set [T_INF_AT, ["WW2_Heer_AT"]];
+_inf set [T_INF_AT, ["WW2_Heer_AT", "WW2_Heer_AT_2"]];
 _inf set [T_INF_LMG, ["WW2_Heer_LMG"]];
 _inf set [T_INF_HMG, ["WW2_Heer_HMG"]];
-_inf set [T_INF_medic, ["WW2_Heer_medic"]];
+_inf set [T_INF_medic, ["WW2_Heer_medic", "WW2_Heer_medic_2", "WW2_Heer_medic_2"]];
 _inf set [T_INF_crew, ["WW2_Heer_crew"]];
 _inf set [T_INF_pilot, ["WW2_Heer_pilot"]];
-_inf set [T_INF_engineer, ["WW2_Heer_engineer"]];
-_inf set [T_INF_spotter, ["WW2_Heer_spotter"]];
-_inf set [T_INF_ammo, ["WW2_Heer_ammo"]];
+_inf set [T_INF_engineer, ["WW2_Heer_engineer", "WW2_Heer_engineer_2"]];
+_inf set [T_INF_spotter, ["WW2_Heer_spotter", "WW2_Heer_spotter_2", "WW2_Heer_spotter_3"]];
+_inf set [T_INF_ammo, ["WW2_Heer_ammo", "WW2_Heer_ammo_2", "WW2_Heer_ammo_3"]];
 _inf set [T_INF_survivor, ["WW2_Heer_unarmed"]];
 _inf set [T_INF_unarmed, ["WW2_Heer_unarmed"]];
 _inf set [T_INF_pilot_heli, ["WW2_Heer_pilot"]];
@@ -49,7 +49,7 @@ _inf set [T_INF_crew_heli, ["WW2_Heer_pilot"]];
 _inf set [T_INF_AA, ["WW2_Heer_TL", "WW2_Heer_TL_2"]];
 
 //==== Recon ====
-_inf set [T_INF_recon_TL, ["WW2_Heer_recon_TL"]];
+_inf set [T_INF_recon_TL, ["WW2_Heer_recon_TL", "WW2_Heer_recon_TL_2"]];
 _inf set [T_INF_recon_rifleman, ["WW2_Heer_recon_rifleman", "WW2_Heer_recon_rifleman_2", "WW2_Heer_recon_rifleman_3"]];
 _inf set [T_INF_recon_medic, ["WW2_Heer_recon_medic"]];
 _inf set [T_INF_recon_exp, ["WW2_Heer_recon_explosives"]];
@@ -68,15 +68,15 @@ _veh set [T_VEH_SIZE-1, nil];
 _veh set [T_VEH_DEFAULT, ["LIB_Kfz1_sernyt"]];
 
 _veh set [T_VEH_car_unarmed, ["LIB_Kfz1_sernyt", "LIB_Kfz1", "LIB_Kfz1_camo", "LIB_Kfz1_Hood_sernyt", "LIB_Kfz1_Hood", "LIB_Kfz1_Hood_camo"]];
-_veh set [T_VEH_car_armed, ["LIB_ger_M3_Scout_IFL", "LIB_Kfz1_MG42_sernyt", "LIB_Kfz1_MG42", "LIB_Kfz1_MG42_camo"]];
+_veh set [T_VEH_car_armed, ["LIB_Kfz1_MG42_sernyt", "LIB_Kfz1_MG42", "LIB_Kfz1_MG42_camo"]];
 
 //_veh set [T_VEH_MRAP_unarmed, ["LIB_Kfz1_sernyt", "LIB_Kfz1", "LIB_Kfz1_camo"]];
-_veh set [T_VEH_MRAP_HMG, ["LIB_ger_M3_Scout_IFL"]];
+_veh set [T_VEH_MRAP_HMG, ["LIB_ger_M3_Scout_IFL", "LIB_ger_M3_Scout_FFV"]];
 _veh set [T_VEH_MRAP_GMG, ["LIB_GER_M8_Greyhound"]];
 
 //_veh set [T_VEH_IFV, [/*"LIB_SdKfz222", "LIB_SdKfz222_camo", "LIB_SdKfz222_gelbbraun", "LIB_SdKfz234_1", "LIB_SdKfz234_2", "LIB_SdKfz234_3", "LIB_SdKfz234_4"*/]];
 _veh set [T_VEH_APC, ["LIB_GER_M3_Halftrack", "LIB_SdKfz_7", "LIB_SdKfz251", "LIB_SdKfz251_FFV"]];
-_veh set [T_VEH_MBT, [ "LIB_ger_M4A3_Sherman", "LIB_PzKpfwV", "LIB_PzKpfwVI_B", "LIB_PzKpfwVI_B_tarn51c", "LIB_PzKpfwVI_B_tarn51d", "LIB_PzKpfwVI_E", "LIB_PzKpfwVI_E_2", "LIB_PzKpfwVI_E_tarn51c", "LIB_PzKpfwVI_E_tarn51d", "LIB_PzKpfwVI_E_tarn52c", "LIB_PzKpfwVI_E_tarn52d", "LIB_PzKpfwVI_E_1", "LIB_StuG_III_G", "LIB_PzKpfwIV_H", "LIB_PzKpfwIV_H_tarn51c", "LIB_PzKpfwIV_H_tarn51d", "LIB_StuG_III_G", "LIB_PzKpfwIV_H", "LIB_PzKpfwIV_H_tarn51c", "LIB_PzKpfwIV_H_tarn51d", "LIB_StuG_III_G", "LIB_PzKpfwIV_H", "LIB_PzKpfwIV_H_tarn51c", "LIB_PzKpfwIV_H_tarn51d"]];
+_veh set [T_VEH_MBT, ["LIB_GER_PzKpfwIV_H_Feldgrau", 2.50, "LIB_PzKpfwIV_H_tarn51c", 2.50, "LIB_PzKpfwIV_H_tarn51d", 2.50, "LIB_PzKpfwIV_H", 2.50, "LIB_GER_SU85_Kaki", 1.25, "LIB_ger_M4A3_Sherman", 1.50, "LIB_T34_76_captured", 1.50, "LIB_ger_T3476_Feldgrau", 1.50, "LIB_ger_T3476_Kaki", 1.50, "LIB_PzKpfwV", 1.50, "LIB_GER_PzKpfwV_Feldgrau", 1.50, "LIB_GER_PzKpfwV_CamoZim", 1.50, "LIB_GER_PzKpfwV_Tarn", 1.50, "LIB_PzKpfwVI_B_tarn51d", 0.50, "LIB_PzKpfwVI_B_tarn51c", 0.50, "LIB_GER_PzKpfwVI_B_sPA505_Feldgrau", 0.50, "LIB_PzKpfwVI_E", 0.50, "LIB_PzKpfwVI_E_2", 0.50, "LIB_PzKpfwVI_E_tarn51c", 0.50, "LIB_PzKpfwVI_E_tarn51d", 0.50, "LIB_PzKpfwVI_E_tarn52c", 0.50, "LIB_PzKpfwVI_E_tarn52d", 0.50, "LIB_PzKpfwVI_E_1", 0.50, "LIB_PzKpfwVI_B_camo_DLV", 0.50]];
 _veh set [T_VEH_MRLS, ["LIB_Nebelwerfer41", "LIB_Nebelwerfer41_Camo", "LIB_Nebelwerfer41_Gelbbraun"]];
 _veh set [T_VEH_SPA, ["LIB_SdKfz124"]];
 _veh set [T_VEH_SPAA, ["LIB_FlakPanzerIV_Wirbelwind", "LIB_SdKfz_7_AA"]];
@@ -107,11 +107,11 @@ _veh set [T_VEH_boat_armed, ["sab_boat_destroyer_o"]];
 
 _veh set [T_VEH_personal, ["LIB_Kfz1_sernyt"]];
 
-_veh set [T_VEH_truck_inf, ["LIB_OpelBlitz_Tent_Y_Camo", "LIB_OpelBlitz_Open_Y_Camo"]];
-_veh set [T_VEH_truck_cargo, ["LIB_OpelBlitz_Tent_Y_Camo", "LIB_OpelBlitz_Open_Y_Camo"]];
+_veh set [T_VEH_truck_inf, ["LIB_OpelBlitz_Tent_Y_Camo", "LIB_OpelBlitz_Open_Y_Camo", "LIB_opelblitz_tentG_Feldgrau", "LIB_opelblitz_open_Feldgrau", "LIB_opelblitz_tentB_Feldgrau", "LIB_opelblitz_open_Tarn", "LIB_opelblitz_tentB_Tarn"]];
+_veh set [T_VEH_truck_cargo, ["LIB_OpelBlitz_Tent_Y_Camo", "LIB_OpelBlitz_Open_Y_Camo", "LIB_opelblitz_tentG_Feldgrau", "LIB_opelblitz_open_Feldgrau", "LIB_opelblitz_tentB_Feldgrau", "LIB_opelblitz_open_Tarn", "LIB_opelblitz_tentB_Tarn"]];
 _veh set [T_VEH_truck_ammo, ["LIB_OpelBlitz_Ammo"]];
 _veh set [T_VEH_truck_repair, ["LIB_OpelBlitz_Parm"]];
-_veh set [T_VEH_truck_medical , ["LIB_OpelBlitz_Ambulance"]];
+_veh set [T_VEH_truck_medical , ["LIB_OpelBlitz_Ambulance", "LIB_ger_opelblitz_medical"]];
 _veh set [T_VEH_truck_fuel, ["LIB_OpelBlitz_Fuel"]];
 
 _veh set [T_VEH_submarine, ["sab_boat_u7"]];
