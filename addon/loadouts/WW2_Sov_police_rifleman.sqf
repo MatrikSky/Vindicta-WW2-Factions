@@ -27,7 +27,6 @@ this addPrimaryWeaponItem "lib_5rnd_762x54";
 
 /*Items*/
 for "_i" from 1 to 5 do {this addItemToVest "lib_5rnd_762x54";};
-this addItemToVest "LIB_Rg42";
 
 /*ACE Items*/
 for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};

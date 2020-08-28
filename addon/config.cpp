@@ -41,6 +41,21 @@ class VinExternalFactions {
 		file = PATH_TO_FILE(M_WW2_Heer_police.sqf);	// Must contain valid bath, otherwise it is ignored
 		version = 1; // Don't change this!
 	};
+	class M_WW2_Afrika_Korps_police : VinExternalFactionBase {
+		loadoutsInitFile = "";
+		file = PATH_TO_FILE(M_WW2_Afrika_Korps_police.sqf);	// Must contain valid bath, otherwise it is ignored
+		version = 1; // Don't change this!
+	};
+	class M_WW2_US_Army : VinExternalFactionBase {
+		loadoutsInitFile = "";
+		file = PATH_TO_FILE(M_WW2_US_Army.sqf);	// Must contain valid bath, otherwise it is ignored
+		version = 1; // Don't change this!
+	};
+	class M_WW2_US_Army_police : VinExternalFactionBase {
+		loadoutsInitFile = "";
+		file = PATH_TO_FILE(M_WW2_US_Army_police.sqf);	// Must contain valid bath, otherwise it is ignored
+		version = 1; // Don't change this!
+	};
 	class M_WW2_Sov : VinExternalFactionBase {
 		loadoutsInitFile = "";
 		file = PATH_TO_FILE(M_WW2_Sov.sqf);	// Must contain valid bath, otherwise it is ignored

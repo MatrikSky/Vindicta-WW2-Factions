@@ -3,7 +3,7 @@ _array = [];
 _array set [T_SIZE-1, nil];
 
 _array set [T_NAME, "tWW2_Afrika_Korps"]; 												//Template name + variable (not displayed)
-_array set [T_DESCRIPTION, "WW2 German Afrika Korps. 1939-1945."]; 	//Template display description
+_array set [T_DESCRIPTION, "WW2 German Afrika Korps. 1941-1945."]; 	//Template display description
 _array set [T_DISPLAY_NAME, "WW2 Afrika Korps"]; 										//Template display name
 _array set [T_FACTION, T_FACTION_Military]; 									//Faction type: police, T_FACTION_military, T_FACTION_Police
 _array set [T_REQUIRED_ADDONS, [
@@ -13,10 +13,7 @@ _array set [T_REQUIRED_ADDONS, [
 		"LIB_core",
 		"GEISTL_MAIN",
 		"GEISTL_FOW_MAIN",
-		"fow_main",
-		"sab_boat_c",
-		"sab_compat_ace",
-		"I44_Buildings"
+		"fow_main"
 		]]; 																	//Addons required to play this template
 
 //==== Infantry ====
@@ -65,27 +62,27 @@ _inf set [T_INF_recon_JTAC, ["WW2_Afrika_Korps_recon_JTAC"]];
 //==== Vehicles ====
 _veh = []; _veh resize T_VEH_SIZE;
 _veh set [T_VEH_SIZE-1, nil];
-_veh set [T_VEH_DEFAULT, ["LIB_Kfz1_sernyt"]];
+_veh set [T_VEH_DEFAULT, ["LIB_DAK_Kfz1"]];
 
 _veh set [T_VEH_car_unarmed, ["LIB_DAK_Kfz1", "LIB_DAK_Kfz1_hood"]];
-_veh set [T_VEH_car_armed, ["LIB_Kfz1_MG42_sernyt", "LIB_Kfz1_MG42", "LIB_Kfz1_MG42_camo"]];
+//_veh set [T_VEH_car_armed, [""]];
 
-//_veh set [T_VEH_MRAP_unarmed, ["LIB_Kfz1_sernyt", "LIB_Kfz1", "LIB_Kfz1_camo"]];
+//_veh set [T_VEH_MRAP_unarmed, [""]];
 _veh set [T_VEH_MRAP_HMG, ["LIB_ger_M3_Scout_IFL", "LIB_DAK_Scout_M3_FFV"]];
 //_veh set [T_VEH_MRAP_GMG, []];
 
-//_veh set [T_VEH_IFV, [/*"LIB_SdKfz222", "LIB_SdKfz222_camo", "LIB_SdKfz222_gelbbraun", "LIB_SdKfz234_1", "LIB_SdKfz234_2", "LIB_SdKfz234_3", "LIB_SdKfz234_4"*/]];
+_veh set [T_VEH_IFV, ["LIB_GER_M8_Greyhound"/*"LIB_SdKfz222", "LIB_SdKfz222_camo", "LIB_SdKfz222_gelbbraun", "LIB_SdKfz234_1", "LIB_SdKfz234_2", "LIB_SdKfz234_3", "LIB_SdKfz234_4"*/]];
 _veh set [T_VEH_APC, ["LIB_DAK_M3_Halftrack", "LIB_DAK_SdKfz_7", "LIB_DAK_SdKfz251", "LIB_DAK_SdKfz251_FFV"]];
 _veh set [T_VEH_MBT, [ "LIB_ger_M4A3_Sherman", 1.50, "LIB_DAK_PzKpfwIV_H", 2, "LIB_DAK_PzKpfwVI_E", 1, "LIB_GER_PzKpfwIV_H_Camo", 1.75, "LIB_PzKpfwV", 1.50, "LIB_PzKpfwVI_B", 0.75]];
-//_veh set [T_VEH_MRLS, ["LIB_Nebelwerfer41", "LIB_Nebelwerfer41_Camo", "LIB_Nebelwerfer41_Gelbbraun"]];
+_veh set [T_VEH_MRLS, ["LIB_Nebelwerfer41", "LIB_Nebelwerfer41_Camo", "LIB_Nebelwerfer41_Gelbbraun"]];
 //_veh set [T_VEH_SPA, ["LIB_SdKfz124"]];
 _veh set [T_VEH_SPAA, ["LIB_DAK_FlakPanzerIV_Wirbelwind", "LIB_DAK_SdKfz_7_AA"]];
 
 _veh set [T_VEH_stat_HMG_high, ["LIB_MG34_Lafette_Deployed"]];
 _veh set [T_VEH_stat_GMG_high, ["LIB_MG42_Lafette_Deployed"]];
-//_veh set [T_VEH_stat_HMG_low, ["LIB_MG34_Lafette_low_Deployed", "LIB_MG42_Lafette_low_Deployed"]];
-//_veh set [T_VEH_stat_GMG_low, ["LIB_MG34_Lafette_low_Deployed", "LIB_MG42_Lafette_low_Deployed"]];
-_veh set [T_VEH_stat_AA, ["sab_static_aa", "sab_small_static_2xaa", "sab_small_static_aa", "LIB_FlaK_30", "LIB_FlaK_38", "LIB_Flakvierling_38", "LIB_DAK_FlaK_36_AA"]];
+//_veh set [T_VEH_stat_HMG_low, [""]];
+//_veh set [T_VEH_stat_GMG_low, [""]];
+_veh set [T_VEH_stat_AA, ["LIB_FlaK_30", "LIB_FlaK_38", "LIB_Flakvierling_38", "LIB_DAK_FlaK_36_AA"]];
 _veh set [T_VEH_stat_AT, ["LIB_Pak40", "LIB_leFH18_AT", "LIB_DAK_FlaK_36", "LIB_DAK_Pak40"]];
 
 _veh set [T_VEH_stat_mortar_light, ["LIB_GrWr34", "LIB_GrWr34_g"]];
@@ -94,18 +91,18 @@ _veh set [T_VEH_stat_mortar_light, ["LIB_GrWr34", "LIB_GrWr34_g"]];
 //_veh set [T_VEH_heli_light, [""]];
 //_veh set [T_VEH_heli_heavy, [""]];
 //_veh set [T_VEH_heli_cargo, [""]];
-_veh set [T_VEH_heli_attack, ["sab_ju88_2", "sab_ju88", "sab_ju87", "sab_bf110", "sab_bf110_2", "sab_bf110", "sab_he111", "LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_5", "LIB_FW190F8_2", "LIB_FW190F8_3", "LIB_Ju87"]];
+//_veh set [T_VEH_heli_attack, [""]];
 
-_veh set [T_VEH_plane_attack, ["sab_ju88_2", "sab_ju88", "sab_ju87", "sab_bf110", "sab_bf110_2", "sab_bf110", "sab_he111", "LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_5", "LIB_FW190F8_2", "LIB_FW190F8_3", "LIB_Ju87"]];
-_veh set [T_VEH_plane_fighter, ["sab_fw190_2", "sab_fw190", "sab_bf109", "sab_bf109", "sab_avia_2", "LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_5", "LIB_FW190F8_2", "LIB_FW190F8_3", "LIB_Ju87"]];
-_veh set [T_VEH_plane_cargo, ["sab_w34"/*, "LIB_Ju52"*/]];
-_veh set [T_VEH_plane_unarmed, ["sab_w34", "sab_ju388"/*, "LIB_Ju52"*/]];
+_veh set [T_VEH_plane_attack, ["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_5", "LIB_FW190F8_2", "LIB_FW190F8_3", "LIB_Ju87"]];
+_veh set [T_VEH_plane_fighter, ["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_5", "LIB_FW190F8_2", "LIB_FW190F8_3", "LIB_Ju87"]];
+//_veh set [T_VEH_plane_cargo, [/*, "LIB_Ju52"*/]];
+//_veh set [T_VEH_plane_unarmed, [/*, "LIB_Ju52"*/]];
 //_veh set [T_VEH_plane_VTOL, [""]];
 
-_veh set [T_VEH_boat_unarmed, ["sab_boat_sreighter_o"]];
-_veh set [T_VEH_boat_armed, ["sab_boat_destroyer_o"]];
+//_veh set [T_VEH_boat_unarmed, [""]];
+//_veh set [T_VEH_boat_armed, [""]];
 
-_veh set [T_VEH_personal, ["LIB_Kfz1_sernyt"]];
+_veh set [T_VEH_personal, ["LIB_DAK_Kfz1"]];
 
 _veh set [T_VEH_truck_inf, ["LIB_DAK_OpelBlitz_Open", "LIB_DAK_OpelBlitz_Tent"]];
 _veh set [T_VEH_truck_cargo, ["LIB_DAK_OpelBlitz_Open", "LIB_DAK_OpelBlitz_Tent"]];
@@ -114,7 +111,7 @@ _veh set [T_VEH_truck_repair, ["LIB_DAK_OpelBlitz_Parm"]];
 _veh set [T_VEH_truck_medical , ["LIB_DAK_OpelBlitz_Ambulance"]];
 _veh set [T_VEH_truck_fuel, ["LIB_DAK_OpelBlitz_Fuel"]];
 
-_veh set [T_VEH_submarine, ["sab_boat_u7"]];
+//_veh set [T_VEH_submarine, [""]];
 
 //==== Drones ====
 _drone = +(tDefault select T_DRONE);

@@ -14,10 +14,7 @@ _array set [T_REQUIRED_ADDONS, [
 		"LIB_core",
 		"GEISTL_MAIN",
 		"GEISTL_FOW_MAIN",
-		"fow_main",
-		"sab_boat_c",
-		"sab_compat_ace",
-		"I44_Buildings"
+		"fow_main"
 		]]; 																	//Addons required to play this template
 
 //==== Infantry ====
@@ -82,29 +79,29 @@ _veh set [T_VEH_MRLS, ["LIB_US6_BM13"]];
 _veh set [T_VEH_SPA, ["LIB_US6_BM13"]];
 _veh set [T_VEH_SPAA, ["LIB_zis5v_61K"]];
 
-//_veh set [T_VEH_stat_HMG_high, ["LIB_SU_SearchLight", "lib_maxim_m30_base"]];
-//_veh set [T_VEH_stat_GMG_high, ["LIB_SU_SearchLight", "lib_maxim_m30_base"]];
-//_veh set [T_VEH_stat_HMG_low, ["lib_maxim_m30_base"]];
-//_veh set [T_VEH_stat_GMG_low, ["lib_maxim_m30_base"]];
-_veh set [T_VEH_stat_AA, ["sab_static_aa", "sab_small_static_2xaa", "sab_small_static_aa", "LIB_61k", "LIB_61k", "LIB_61k"]];
+//_veh set [T_VEH_stat_HMG_high, [""]];
+//_veh set [T_VEH_stat_GMG_high, [""]];
+//_veh set [T_VEH_stat_HMG_low, [""]];
+//_veh set [T_VEH_stat_GMG_low, [""]];
+_veh set [T_VEH_stat_AA, ["LIB_61k"]];
 _veh set [T_VEH_stat_AT, ["LIB_Zis3"]];
 
 _veh set [T_VEH_stat_mortar_light, ["LIB_BM37_ACE"]];
-//_veh set [T_VEH_stat_mortar_heavy, ["LIB_BM37_ACE"]];
+//_veh set [T_VEH_stat_mortar_heavy, [""]];
 
-//_veh set [T_VEH_heli_light, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "LIB_Pe2", "sab_tusb2", "sab_il2"]];
-//_veh set [T_VEH_heli_heavy, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "LIB_Pe2", "sab_tusb2", "sab_il2"]];
-//_veh set [T_VEH_heli_cargo, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "LIB_Pe2", "sab_tusb2", "sab_il2"]];
-_veh set [T_VEH_heli_attack, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "LIB_Pe2", "sab_tusb2", "sab_il2"]];
+//_veh set [T_VEH_heli_light, [""]];
+//_veh set [T_VEH_heli_heavy, [""]];
+//_veh set [T_VEH_heli_cargo, [""]];
+//_veh set [T_VEH_heli_attack, [""]];
 
-_veh set [T_VEH_plane_attack, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "LIB_Pe2", "sab_tusb2", "sab_il2"]];
-_veh set [T_VEH_plane_fighter, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "sab_i16", "sab_la5", "sab_la5_2"]];
+_veh set [T_VEH_plane_attack, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2", "LIB_Pe2"]];
+_veh set [T_VEH_plane_fighter, ["LIB_P39", "LIB_RA_P39_3", "LIB_RA_P39_2"]];
 _veh set [T_VEH_plane_cargo, ["LIB_Li2"]];
 _veh set [T_VEH_plane_unarmed, ["LIB_Li2"]];
 //_veh set [T_VEH_plane_VTOL, [""]];
 
-_veh set [T_VEH_boat_unarmed, ["sab_boat_sreighter_i"]];
-_veh set [T_VEH_boat_armed, ["sab_boat_destroyer_i", "sab_boat_torpedo_i"]];
+//_veh set [T_VEH_boat_unarmed, [""]];
+//_veh set [T_VEH_boat_armed, [""]];
 
 _veh set [T_VEH_personal, ["LIB_GazM1_SOV", "LIB_GazM1_SOV_camo_sand"]];
 
@@ -115,7 +112,7 @@ _veh set [T_VEH_truck_repair, ["LIB_SOV_ZiS6Parm_RKKA"]];
 _veh set [T_VEH_truck_medical , ["LIB_SdKfz251IFL_medical", "LIB_Willys_MB_Ambulance", "LIB_sov_GMC_CCKW353cf_Stud2zelOpen_Medical", "LIB_sov_GMC_CCKW353cf_Stud2zelTent_Medical", "LIB_ZiS5v_Med", "LIB_ZiS5v_Med", "LIB_ZiS5v_Med", "LIB_ZiS5v_Med", "LIB_ZiS5v_Med"]];
 _veh set [T_VEH_truck_fuel, ["LIB_ZiS5v_Fuel"]];
 
-_veh set [T_VEH_submarine, ["sab_boat_u7_i"]];
+//_veh set [T_VEH_submarine, [""]];
 
 //==== Drones ====
 _drone = +(tDefault select T_DRONE);
@@ -141,23 +138,23 @@ _group set [T_GROUP_inf_AA_team, [
 ]];
 
 //==== Description ====
-(T_NAMES select T_VEH) set [T_VEH_car_unarmed, "Unarmed Car"]; //				= 1 Car like a Prowler or UAZ
-(T_NAMES select T_VEH) set [T_VEH_car_armed, "Armed Car"]; //					= 2 Car with any kind of mounted weapon
-(T_NAMES select T_VEH) set [T_VEH_MRAP_unarmed, "Unarmed Scout Car"]; //		= 3 MRAP
-(T_NAMES select T_VEH) set [T_VEH_MRAP_HMG, "Armed Scout Car"]; //				= 4 MRAP with a mounted HMG gun
-(T_NAMES select T_VEH) set [T_VEH_MRAP_GMG, "Armored Car"]; //					= 5 MRAP with a mounted GMG gun
-(T_NAMES select T_VEH) set [T_VEH_APC, "APC"]; //								= 7 Armored personnel carrier
-(T_NAMES select T_VEH) set [T_VEH_MBT, "Tank"]; //								= 8 Main Battle Tank
-(T_NAMES select T_VEH) set [T_VEH_MRLS, "Self-Propelled Rocket Artillery"]; //	= 9 Multiple Rocket Launch System
-(T_NAMES select T_VEH) set [T_VEH_heli_attack, "Plane"]; //						= 23 Attack helicopter
-(T_NAMES select T_VEH) set [T_VEH_SPA, "Self-Propelled Artillery"]; //			= 10 Self-Propelled Artillery
-(T_NAMES select T_INF) set [T_INF_AA, "Radioman"]; //							= 13 Anti-Air
-(T_NAMES select T_INF) set [T_INF_pilot_heli, "Pilot"]; //						= 21 Helicopter pilot
-(T_NAMES select T_INF) set [T_INF_crew_heli, "Pilot"]; //						= 19 Helicopter crew
-(T_NAMES select T_VEH) set [T_VEH_stat_AA, "Air-Defence Gun"]; //				= 16 Static AA, can be a gun or guided-missile launcher
-(T_NAMES select T_VEH) set [T_VEH_stat_AT, "Anti-Tank Gun"]; //					= 17 Static AT, e.g. a gun or ATGM
-(T_NAMES select T_VEH) set [T_VEH_stat_mortar_light, "Mortar"]; // 				= 18 Light mortar
-(T_NAMES select T_VEH) set [T_VEH_SPAA, "Self-Propelled Anti-Aircraft Gun"]; //	= 11 Self-Propelled Anti-Aircraft system
+(T_NAMES select T_VEH) set [T_VEH_car_unarmed, "Unarmed Car"];
+(T_NAMES select T_VEH) set [T_VEH_car_armed, "Armed Car"];
+(T_NAMES select T_VEH) set [T_VEH_MRAP_HMG, "Armed Scout Car"];
+(T_NAMES select T_VEH) set [T_VEH_MRAP_GMG, "LVT"];
+(T_NAMES select T_VEH) set [T_VEH_IFV, "Armored Car"];
+(T_NAMES select T_VEH) set [T_VEH_APC, "Halftrack"];
+(T_NAMES select T_VEH) set [T_VEH_MBT, "Tank"];
+(T_NAMES select T_VEH) set [T_VEH_MRLS, "Self-Propelled Rocket Artillery"];
+(T_NAMES select T_VEH) set [T_VEH_heli_attack, "Plane"];
+(T_NAMES select T_VEH) set [T_VEH_SPA, "Self-Propelled Artillery"];
+(T_NAMES select T_INF) set [T_INF_AA, "Radioman"];
+(T_NAMES select T_INF) set [T_INF_pilot_heli, "Pilot"];
+(T_NAMES select T_INF) set [T_INF_crew_heli, "Pilot"];
+(T_NAMES select T_VEH) set [T_VEH_stat_AA, "Air-Defence Gun"];
+(T_NAMES select T_VEH) set [T_VEH_stat_AT, "Anti-Tank Gun"];
+(T_NAMES select T_VEH) set [T_VEH_stat_mortar_light, "Mortar"];
+(T_NAMES select T_VEH) set [T_VEH_SPAA, "Self-Propelled Anti-Aircraft Gun"];
 
 //==== Arrays ====
 _array set [T_INF, _inf];

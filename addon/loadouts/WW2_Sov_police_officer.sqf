@@ -26,7 +26,6 @@ this addHandgunItem "lib_5rnd_762x54_t30";
 
 /*Items*/
 for "_i" from 1 to 4 do {this addItemToVest "lib_5rnd_762x54_t30";};
-this addItemToVest "LIB_Rg42";
 
 /*ACE Items*/
 for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};

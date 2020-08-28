@@ -13,10 +13,7 @@ _array set [T_REQUIRED_ADDONS, [
 		"LIB_core",
 		"GEISTL_MAIN",
 		"GEISTL_FOW_MAIN",
-		"fow_main",
-		"sab_boat_c",
-		"sab_compat_ace",
-		"I44_Buildings"
+		"fow_main"
 		]]; 																		//Addons required to play this template
 
 //==== Infantry ====
